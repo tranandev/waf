@@ -1,0 +1,337 @@
+.easy-autocomplete {
+    width: 100%!important;
+}
+
+select {
+	//width: auto!important;
+}
+
+th {
+    word-break: break-all;
+}
+
+a li{
+    text-decoration: none;
+}
+
+li {
+        list-style-type: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+body {
+    background: #575F63;
+}
+
+#app {
+    /*width: 1150px;*/
+    width: 100%;
+    margin: auto;
+    display: table;
+}
+.navbar {
+    min-height: 120px;
+    margin: 0px;
+    padding-top: 16px;
+}
+
+.navbar-right {
+    color: white;
+}
+
+.navbar-header {
+    width: 100%;
+}
+
+.header-list {
+    float: right;
+}
+
+.header-list a {
+    color: white;
+}
+ 
+.header-list ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+#sidebar {
+    background: #f5f5f5;
+    width: 20%;
+     min-height: 500px;
+    /*border-right: solid 1px;*/
+    float: left;
+    padding-left: 20px;
+	padding-right: 30px;
+	position: relative;
+	transition: margin 1s;
+}
+
+#mainbar {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    padding-top: 20px;
+	transition: width 1s;
+padding-left: 20px;
+}
+
+.active-menu {
+    background: rgba(87, 95, 99, 0.11)!important;
+    color: black!important;
+}
+
+.menu-item {
+    padding-top: 2px;
+    height: 30px;
+    background: #f5f5f5;
+    color: black;
+    font-size: 17px;
+    padding-left: 10px;
+    font-weight: bold;
+    border-bottom: 1px #E1E1E1 solid;
+    text-decoration: none!important;
+}
+
+.menu-item span{
+    vertical-align: middle;
+    text-decoration: none!important;
+}
+
+.menu-item:hover {
+	background: rgba(87, 95, 99, 0.11)!important;
+}
+
+.menu-item .fa-caret-down {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.sub-menu, .sub-menu111{
+	margin-left: 10px;
+    font-size: 15px!important;
+    height: 28px!important;
+    font-weight: normal!important;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.panel-heading {
+    background: #f15922!important;
+    color: white!important;
+}
+
+/*.dataTables_paginate a {
+    margin-left: 5px;
+}*/
+
+
+.dataTable i {
+    margin-left: 5px;
+}
+
+.dataTable input {
+    width: 90%;
+}
+
+
+.radio .checkbox {
+    display: block!important;
+}
+
+.sub-heading {
+    border-color: #ddd;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.dataTable {
+    width: 100%!important;
+} 
+
+.div-table, #div-policy, #div-traffic-shape {
+    margin: 10px;
+}
+
+.div-table .btn-primary {
+    margin: 10px;
+}
+.panel-default {
+    margin-top: 30px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+input[type=text], select, input[type=password] {
+        display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+td {
+    vertical-align: middle!important;
+}
+
+#div-dns {
+
+}
+
+#div-dns table{
+    width: 100%;
+}
+
+#div-dns td, th{
+    padding-left: 30px;
+}
+
+#div-dns td {
+    text-align: right;
+}
+
+#div-dns tr {
+    height: 46px;
+}
+
+.weekly-btn {
+    width: 60px;
+}
+
+.monthly-btn {
+    width: 35px;
+    font-size: 8px;
+    text-align: center;
+}
+
+.time-picker {
+        padding: 10px;
+    border: solid 1px #ccc;
+    display: none;
+    border-radius: 4px;
+    width: 100%
+}
+
+.week-day-picker, .month-picker {
+    margin-bottom: 20px;
+}
+
+
+.sub-table, .sub-table111{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: white;
+    border: solid 1px #ddd;
+    //border-radius: 4px;
+	//box-shadow: rgba(0, 0, 0, 0.28) 0px 0px 1px 5000px;
+}
+
+.close-sub-table {
+    float: right;
+    margin-top: 10px;
+}
+
+.bootstrap-tagsinput {
+    width: 100%!important;
+    margin-bottom: 10px;
+}
+
+.dataTables_paginate {
+    margin-bottom: -10px;
+    margin-top: -10px;
+    margin-right: 10px;
+} 
+
+.onoffswitch {
+    position: relative; width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 30px; padding: 0; line-height: 30px;
+    border: 2px solid #999999; border-radius: 30px;
+    background-color: #EEEEEE;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 30px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 28px;
+    border: 2px solid #999999; border-radius: 30px;
+    transition: all 0.3s ease-in 0s; 
+    height: 30px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #34A7C1;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #34A7C1;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
+
+.sslfile {
+    border: 1px solid #ccc;
+    display: none;
+}
+
+td.details-control {
+    background: url('../resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../resources/details_close.png') no-repeat center center;
+}
+
+.modal1 {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal1 {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal1 {
+    display: block;
+}

@@ -1,0 +1,33 @@
+
+SecRule REMOTE_ADDR "2.2.2.2" "id:10, phase:1, deny, log, tag:'custom_1'"
+
+SecRule SERVER_NAME test.com "chain, id:5012, phase:1, log, t:none, t:urlDecodeUni, deny, capture, tag:'custom_1'"
+SecRule REQUEST_URI "js/js_strings.asp" "t:none, t:urlDecodeUni, capture, setvar:'tx.msg=end'"
+
+
+SecRule REQUEST_URI "@contains /wp-admin/admin.php" "chain,id:2170041,   phase:1,   block,   rev:'1062017',   t:none,   t:urlDecodeUni,   severity:'2',   msg:'SLR: WordPress Plugin Tribulant Newsletters 4.6.4.2 newsletters-history XSS',   tag:'application-WordPress',   tag:'language-php',   tag:'platform-multi',   tag:'attack-xss',   tag:'https://www.exploit-db.com/exploits/42129'"
+ SecRule ARGS:page "@strmatch newsletters-history" "t:none,chain"
+ SecRule ARGS:order|ARGS:wpmlsearchterm "@detectXSS" "t:none"
+
+
+
+SecRule ARGS:page "@streq mlw_quiz_options" "chain,id:2170019,    phase:2,    block,    rev:'2932017',    t:none,    t:urlDecodeUni,    logdata:'%{matched_var}',    severity:'2',    msg:'SLR: Quiz and Survey Master WordPress Plugin XSS/CSRF',    tag:'application-WordPress',    tag:'language-php',    tag:'platform-multi',    tag:'attack-xss',    tag:'https://quizandsurveymaster.com/important-security-update-version-4-7-9/'"
+ SecRule ARGS:question_namehunghung "@detectXSS" "t:none"
+
+SecRule SERVER_NAME www.digitalocean.com "chain, id:5024, phase:1, log, t:none, t:urlDecodeUni, deny, capture, tag:'custom_1'"
+SecRule REQUEST_URI "community/tutorials/how-to-install-nginx-on-ubuntu-16-04" "t:none, t:urlDecodeUni, capture, setvar:'tx.msg=end'"
+
+
+
+
+
+SecRule ARGS:gf_page "@streq upload" "chain,   id:'2100105',   phase:2,   t:none,   log,   block,   tag:'application-WordPress',   tag:'language-php',   tag:'platform-multi',   tag:'attack-remote file inclusion',   msg:'SLR: Arbitrary File Upload in Wordpress Gravity Forms plugin',   logdata:'%{matched_var}'"
+        SecRule ARGS_NAMES "@contains form_id" "chain,t:none"
+            SecRule ARGS:name "@contains .php" "t:lowercase"
+SecRule ARGS:page "@streq mlw_quiz_options" "chain,id:2170019,    phase:2,    block,    rev:'2932017',    t:none,    t:urlDecodeUni,    logdata:'%{matched_var}',    severity:'2',    msg:'SLR: Quiz and Survey Master WordPress Plugin XSS/CSRF',    tag:'application-WordPress',    tag:'language-php',    tag:'platform-multi',    tag:'attack-xss',    tag:'https://quizandsurveymaster.com/important-security-update-version-4-7-9/'"
+ SecRule ARGS:question_namehunghung "@detectXSS" "t:none"
+
+
+-----------------------------------------------------------------SecRule REQUEST_URI "@contains /wp-admin/admin.php" "chain,id:2170041,   phase:1,   block,   rev:'1062017',   t:none,   t:urlDecodeUni,   severity:'2',   msg:'SLR: WordPress Plugin Tribulant Newsletters 4.6.4.2 newsletters-history XSS',   tag:'application-WordPress',   tag:'language-php',   tag:'platform-multi',   tag:'attack-xss',   tag:'https://www.exploit-db.com/exploits/42129'"
+ SecRule ARGS:page "@strmatch newsletters-history" "t:none,chain"
+ SecRule ARGS:order|ARGS:wpmlsearchterm "@detectXSS" "t:none"------------------------------------------------------------------1---------------------------------------------------------------------
